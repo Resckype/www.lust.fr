@@ -49,7 +49,7 @@ if ( 0 === $woocommerce_loop['loop'] % $woocommerce_loop['columns'] ) {
 }
 ?>
 <li <?php post_class( $classes ); ?>>
-
+<h2> PloP</h2>
 	<?php
 	/**
 	 * woocommerce_before_shop_loop_item hook.

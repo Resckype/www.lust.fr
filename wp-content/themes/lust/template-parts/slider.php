@@ -1,4 +1,4 @@
-<div class="slide cycle-slideshow" data-cycle-fx="carousel" data-cycle-speed="600" data-cycle-timeout="2000" data-cycle-slides="> div">
+<div class="slide cycle-slideshow" data-cycle-fx="carrousel" data-cycle-speed="1000" data-cycle-timeout="6000" data-cycle-slides="> div">
     <div class="">
         <img src="<?= _URL_IMAGES; ?>/_visuels_dyns/slide-1.jpg" alt="" />
         <h2>Ma montre 1</h2>
