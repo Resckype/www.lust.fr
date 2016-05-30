@@ -33,7 +33,7 @@ get_header(); ?>
 			<p><?php the_tags(); ?></p>
 		</footer>
 		<?php do_action( 'foundationpress_post_before_comments' ); ?>
-		<?php comments_template(); ?>
+	
 		<?php do_action( 'foundationpress_post_after_comments' ); ?>
 	</article>
 <?php endwhile;?>

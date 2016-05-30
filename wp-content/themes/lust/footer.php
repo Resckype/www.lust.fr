@@ -12,10 +12,21 @@
 
 		</section>
 		<div id="footer-container">
-			<footer id="footer">
+			<!-- <footer id="footer">
 				<?php do_action( 'foundationpress_before_footer' ); ?>
 				<?php dynamic_sidebar( 'footer-widgets' ); ?>
 				<?php do_action( 'foundationpress_after_footer' ); ?>
+			</footer> -->
+			<footer id="footer">
+				<div class="small-12 large-4 columns">
+					<h3>Informations</h3>
+				</div>
+				<div class="small-12 large-4 columns">
+					<h3>Aide</h3>
+				</div>
+				<div class="small-12 large-4 columns">
+					<h3>Newsletter + Social</h3>
+				</div>
 			</footer>
 		</div>
 

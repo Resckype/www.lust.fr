@@ -1,0 +1,20 @@
+.nav-logo {
+  text-align: center;
+}
+
+.menu-icon {
+  width: 28px;
+  text-align: left;
+  &::after {
+    height: 2px;
+    background: black;
+    box-shadow: 0 8px 0 black,0 16px 0 black;
+  }
+  &:hover {
+    &::after {
+      height: 2px;
+      background: $gold;
+      box-shadow: 0 8px 0 $gold,0 16px 0 $gold;
+    }
+  }
+}

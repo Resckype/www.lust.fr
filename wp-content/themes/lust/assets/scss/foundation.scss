@@ -8,6 +8,7 @@
 */
 
 //  Settings
+@import "global/variables";
 @import "global/settings"; // Foundation settings file.
 
 // Foundation mixins & browser resets
@@ -79,6 +80,8 @@
 @import "modules/navigation";
 @import "modules/footer";
 @import "modules/sidebar";
+@import "modules/header";
+@import "modules/slider";
 
 // Components
 @import "components/buttons";
@@ -86,6 +89,7 @@
 @import "components/featured-image";
 @import "components/dividers";
 @import "components/links";
+@import "components/contact";
 
 // Templates
 @import "templates/front";

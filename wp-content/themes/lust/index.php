@@ -16,7 +16,33 @@
 get_header(); ?>
 
 <div id="" role="main" class="row">
-	<article class="main-content">
+	<section class="row index-best">
+		<h2>Meilleures ventes</h2>
+		<?php
+			$args = array(
+			'post_type' => 'product',
+			'posts_per_page' => 3,
+			'meta_key' => 'total_sales',
+			'orderby' => 'meta_value_num',
+			);
+
+			$loop = new WP_Query( $args );
+			if ( $loop->have_posts() ) {
+			while ( $loop->have_posts() ) : $loop->the_post();
+			get_template_part( 'template-parts/montre-thumb', get_post_format() );
+			endwhile;
+			} else {
+			echo __( 'No products found' );
+			}
+
+			wp_reset_query();
+
+		?>
+
+	</section>
+
+	<section class="row index-actu">
+		<h2>Actualités</h2>
 	<?php if ( have_posts() ) : ?>
 
 		<?php /* Start the Loop */ ?>
@@ -37,7 +63,22 @@ get_header(); ?>
 			</nav>
 		<?php } ?>
 
-	</article>
+	</section>
+
+	<section class="row index-assure">
+		<div class="small-6 large-3 columns">
+			Livraison
+		</div>
+		<div class="small-6 large-3 columns">
+			Offre
+		</div>
+		<div class="small-6 large-3 columns">
+			Confidentiel
+		</div>
+		<div class="small-6 large-3 columns">
+			Paiement sécurisé
+		</div>
+	</section>
 
 
 </div>

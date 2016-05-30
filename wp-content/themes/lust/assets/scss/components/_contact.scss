@@ -1,0 +1,15 @@
+.contact-red {
+  font-weight: 700;
+  color: $gold;
+}
+
+.contact-button {
+  text-align: center;
+  input {
+    background: $gold;
+    font-size: $font-size-big;
+    color: white;
+    padding: 12px 40px;
+    border: none
+  }
+}

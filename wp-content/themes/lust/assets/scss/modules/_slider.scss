@@ -1,0 +1,11 @@
+.slide-content {
+  max-height: 400px;
+  background: white;
+}
+.slide-img {
+  display: block;
+  img {
+    height: 400px;
+    min-width: 0 !important;
+  }
+}
