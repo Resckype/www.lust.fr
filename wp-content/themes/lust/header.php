@@ -15,6 +15,7 @@
 		<meta charset="<?php bloginfo( 'charset' ); ?>" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Cinzel:400,700' rel='stylesheet' type='text/css'>
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>
@@ -43,8 +44,11 @@
 	<?php do_action( 'foundationpress_layout_start' ); ?>
 
 	<header id="masthead" class="site-header" role="banner">
-		<div class="title-bar nav-logo" data-responsive-toggle="site-navigation">
-			<button class="menu-icon" type="button" data-toggle="mobile-menu"></button>
+		<div class="row title-bar nav-logo" data-responsive-toggle="site-navigation">
+			<!-- <button class="menu-icon" type="button" data-toggle="mobile-menu"></button> -->
+			<div id="" class="menu-burger open" data-toggle="mobile-menu">
+		    <span></span>
+		  </div>
 			<div class="title-bar-title">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/lust.png" alt="" /></a>
 			</div>

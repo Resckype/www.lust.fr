@@ -11,6 +11,20 @@
 ?>
 
 		</section>
+		<div class="row reassure">
+			<div class="small-6 large-3 columns">
+				Livraison
+			</div>
+			<div class="small-6 large-3 columns">
+				Offre
+			</div>
+			<div class="small-6 large-3 columns">
+				Confidentiel
+			</div>
+			<div class="small-6 large-3 columns">
+				Paiement sécurisé
+			</div>
+		</div>
 		<div id="footer-container">
 			<!-- <footer id="footer">
 				<?php do_action( 'foundationpress_before_footer' ); ?>

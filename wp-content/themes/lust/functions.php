@@ -72,3 +72,7 @@ function my_slider() {
     }
 }
 add_action('foundationpress_after_header', 'my_slider', 10);
+function custom_excerpt_length( $length ) {
+	return 50;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );

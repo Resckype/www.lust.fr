@@ -10,6 +10,7 @@
 //  Settings
 @import "global/variables";
 @import "global/settings"; // Foundation settings file.
+@import "global/mixins";
 
 // Foundation mixins & browser resets
 @import '../components/foundation-sites/scss/foundation';
@@ -82,6 +83,7 @@
 @import "modules/sidebar";
 @import "modules/header";
 @import "modules/slider";
+@import "modules/index";
 
 // Components
 @import "components/buttons";

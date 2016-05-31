@@ -105,7 +105,7 @@ $block-grid-max: 8;
 $header-font-family: $body-font-family;
 $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
-$font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
+$font-family-monospace: 'Lato', Helvetica, Arial, sans-serif;
 $header-sizes: (
   small: (
     'h1': 21,
@@ -536,12 +536,12 @@ $thumbnail-radius: $global-radius;
 // -------------
 
 $titlebar-background: white;
-$titlebar-color: $white;
-$titlebar-padding: 0.5rem;
+$titlebar-color: black;
+$titlebar-padding: 1rem;
 $titlebar-text-font-weight: bold;
-$titlebar-icon-color: $white;
-$titlebar-icon-color-hover: $medium-gray;
-$titlebar-icon-spacing: 0.25rem;
+$titlebar-icon-color: black;
+$titlebar-icon-color-hover: $gold;
+$titlebar-icon-spacing: 0.5rem;
 
 // 35. Tooltip
 // -----------

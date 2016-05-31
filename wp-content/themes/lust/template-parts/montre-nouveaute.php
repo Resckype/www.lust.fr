@@ -3,7 +3,11 @@
     <div class="slide-img">
       <?php the_post_thumbnail(); ?>
     </div>
-    <h2 class="slide-title"><?php the_title(); ?></h2>
+    <div class="slide-txt">
+      <p class="slide-new">Nouveauté</p>
+      <p class="slide-title"><?php the_title(); ?></p>
+      <p class="slide-price"><?php echo $price = get_post_meta( get_the_ID(), '_regular_price', true); ?>€</p>
+    </div>
   </a>
 </div>
 

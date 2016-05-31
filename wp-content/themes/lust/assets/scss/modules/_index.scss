@@ -1,0 +1,124 @@
+.index-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  h2 {
+    position: relative;
+    display: table-cell;
+    background: $gold;
+    font-size: 31px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: white;
+    padding: 0 10px 0 20px;
+    margin-left: -10px;
+    @media screen and (max-width: 1220px) {
+      margin-left: 0px;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: -100px;
+      display: table-cell;
+      width: 100px;
+      height: 100%;
+      background: $gold-gradient;
+    }
+  }
+}
+
+.index-best {
+  background: #000;
+  h2 {
+    width: auto;
+  }
+}
+
+.index-actu {
+  h2 {
+    width: auto;
+  }
+}
+
+.index-product {
+  margin-top: 30px;
+  .index-thumbnail {
+    background: #fff;
+    display: block;
+    width: auto;
+    height: 240px;
+    overflow: hidden;
+    margin-bottom: 16px;
+  }
+  h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 10px;
+    a {
+      color: #fff;
+    }
+  }
+  h4 {
+    display: block;
+    margin: 0 auto;
+    font-size: 17px;
+    color: $gold;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .index-ajout {
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+    height: auto;
+    a {
+      position: relative;
+      z-index: 99;
+      display: table-cell;
+      background: transparent;
+      color: #fff;
+      text-transform: uppercase;
+      border: 1px solid #fff;
+      vertical-align: middle;
+      padding: 6px 0;
+      transition: 0.4s;
+    }
+    .sweep-to-right {
+      position: absolute;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      transition: 0.4s;
+    }
+    &:hover {
+      a {
+        transition: 0.4s;
+        color: #000;
+      }
+      .sweep-to-right {
+        transition: 0.4s;
+        left: 0;
+      }
+    }
+  }
+}
+
+.article-post {
+  margin-top: 30px;
+  header {
+    border: 1px solid $gold;
+  }
+  footer {
+    background: #000;
+    color: #fff;
+  }
+}

@@ -1,8 +1,10 @@
-<div class="slide cycle-slideshow" data-cycle-fx="carrousel" data-cycle-speed="1000" data-cycle-timeout="3000" data-cycle-slides="> div">
+<div class="slide cycle-slideshow" data-cycle-fx="carrousel" data-cycle-speed="1000" data-cycle-timeout="4000" data-cycle-slides="> div">
     <?php
 			$args = array(
 			'post_type' => 'product',
-			'posts_per_page' => 2
+			'posts_per_page' => 3,
+      'orderby' => 'post_date',
+      'order' => 'DESC'
 			);
 
 			$loop = new WP_Query( $args );

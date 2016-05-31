@@ -15,8 +15,10 @@
 
 get_header(); ?>
 
-<div id="" role="main" class="row">
-	<section class="row index-best">
+</section>
+
+<section class="container index-section index-best">
+	<div class="row best-content">
 		<h2>Meilleures ventes</h2>
 		<?php
 			$args = array(
@@ -38,10 +40,12 @@ get_header(); ?>
 			wp_reset_query();
 
 		?>
+	</div>
+</section>
 
-	</section>
+<section class="container">
 
-	<section class="row index-actu">
+	<div class="row index-section index-actu">
 		<h2>Actualités</h2>
 	<?php if ( have_posts() ) : ?>
 
@@ -56,31 +60,12 @@ get_header(); ?>
 		<?php endif; // End have_posts() check. ?>
 
 		<?php /* Display navigation to next/previous pages when applicable */ ?>
-		<?php if ( function_exists( 'foundationpress_pagination' ) ) { foundationpress_pagination(); } else if ( is_paged() ) { ?>
-			<nav id="post-nav">
-				<div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', 'foundationpress' ) ); ?></div>
-				<div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'foundationpress' ) ); ?></div>
-			</nav>
-		<?php } ?>
-
-	</section>
-
-	<section class="row index-assure">
-		<div class="small-6 large-3 columns">
-			Livraison
-		</div>
-		<div class="small-6 large-3 columns">
-			Offre
-		</div>
-		<div class="small-6 large-3 columns">
-			Confidentiel
-		</div>
-		<div class="small-6 large-3 columns">
-			Paiement sécurisé
-		</div>
-	</section>
 
 
-</div>
+	</div>
+
+
+
+
 
 <?php get_footer();

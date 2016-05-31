@@ -1,6 +1,7 @@
 // Couleurs
 
 $gold: #c2a555;
+$gold-gradient: linear-gradient(to right, rgba($gold, 1) 25%, transparent);
 
 // Font Size
 $font-size-less: 11px;
@@ -9,4 +10,8 @@ $font-size-normal: 15px;
 $font-size-big: 17px;
 $font-size-more: 19px;
 
+// Taille écran
+
+
 // Modules part
+$slider-height-large: 400px;
