@@ -44,12 +44,23 @@
 .index-product {
   margin-top: 30px;
   .index-thumbnail {
+    position: relative;
     background: #fff;
     display: block;
     width: auto;
     height: 240px;
     overflow: hidden;
     margin-bottom: 16px;
+    text-align: center;
+    vertical-align: middle;
+    img {
+      width: 100%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
   }
   h3 {
     font-family: 'Cinzel', serif;
@@ -88,7 +99,7 @@
       text-transform: uppercase;
       border: 1px solid #fff;
       vertical-align: middle;
-      padding: 6px 0;
+      padding: .4rem 0;
       transition: 0.4s;
     }
     .sweep-to-right {
@@ -101,7 +112,7 @@
     }
     &:hover {
       a {
-        transition: 0.4s;
+        transition: 0.2s;
         color: #000;
       }
       .sweep-to-right {
@@ -115,10 +126,126 @@
 .article-post {
   margin-top: 30px;
   header {
-    border: 1px solid $gold;
+    margin-bottom: 14px;
+    border-bottom: 1px solid #000;
+    h3 {
+      font-family: 'Cinzel', serif;
+      font-size: 25px;
+      a {
+        color: #000;
+      }
+    }
   }
+  .entry-content {
+    .thumb {
+      position: relative;
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      vertical-align: middle;
+      overflow: hidden;
+      width: 100%;
+      height: 200px;
+      margin-bottom: 1rem;
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background: transparent;
+        color: $gold;
+        vertical-align: middle;
+        transition: 0.4s;
+        img {
+          width: 100%;
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+      .sweep-to-bottom {
+        position: absolute;
+        display: table;
+        left: 0;
+        right: 0;
+        bottom: -100%;
+        width: 100%;
+        height: 100%;
+        padding: 4rem;
+        background: rgba(0,0,0,0.8);
+        transition: 0.4s;
+        @media screen and (max-width: 980px) {
+          bottom: 0;
+          padding: 1rem;
+        }
+        h3 {
+          display: table-cell;
+          vertical-align: middle;
+          font-family: 'Cinzel', serif;
+          font-size: 25px;
+          font-weight: 400;
+          color: #fff;
+          text-align: center;
+        }
+      }
+      &:hover {
+        .sweep-to-bottom {
+          transition: 0.4s;
+          bottom: 0;
+        }
+      }
+    }
+  }
+
   footer {
-    background: #000;
-    color: #fff;
+    background: transparent;
+    text-align: center;
+    padding: 0.5rem 0;
+    //border-bottom: 1px solid #000;
+    .wrapper {
+      display: table;
+      margin: 0 auto;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      vertical-align: middle;
+      a {
+        display: inline-block;
+        position: relative;
+        z-index: 99;
+        background: transparent;
+        vertical-align: middle;
+        width: auto;
+        height: auto;
+        padding: 0.5rem 1rem;
+        text-transform: uppercase;
+        color: $gold;
+        border: 1px solid $gold;
+        transition: 0.4s;
+      }
+      .sweep-to-right {
+        display: table-cell;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: $gold;
+        transition: 0.4s;
+      }
+      &:hover {
+        a {
+          transition: 0.2s;
+          color: #fff;
+        }
+        .sweep-to-right {
+          transition: 0.4s;
+          left: 0;
+        }
+      }
+    }
   }
 }

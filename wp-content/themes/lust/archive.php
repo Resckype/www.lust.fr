@@ -40,7 +40,6 @@ get_header(); ?>
 		<?php } ?>
 
 	</article>
-	<?php get_sidebar(); ?>
 
 </div>
 

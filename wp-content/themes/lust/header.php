@@ -23,7 +23,7 @@
 
 	<nav id="site-navigation" class="main-navigation top-bar" role="navigation">
 		<div class="top-bar-left">
-
+				<?php dynamic_sidebar( 'header-sidebar' ); ?>
 		</div>
 		<div class="top-bar-right">
 			<?php foundationpress_top_bar_r(); ?>
@@ -57,7 +57,7 @@
 
 	</header>
 
-	<section class="container">
+	<section class="container container-first">
 		<?php
 				// --> Injection slider my_slider 10
 				do_action( 'foundationpress_after_header' );

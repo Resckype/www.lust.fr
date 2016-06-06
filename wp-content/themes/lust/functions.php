@@ -76,3 +76,51 @@ function custom_excerpt_length( $length ) {
 	return 50;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+add_action( 'widgets_init', 'header_sidebar_for_nav' );
+function header_sidebar_for_nav() {
+  register_sidebar(
+    array(
+      'name'          => ( 'Header Sidebar'),
+      'id'            => 'header-sidebar',
+      'description'   => "Mettre un widget,de recherche ici, pour qu'une barre de recherche apparaisse dans le menu",
+      'before_widget' => '<div id="%1$s" class="widget %2$s">',
+      'after_widget'  => '</div>',
+      'before_title'  => '<div class="search-widget">',
+      'after_title'   => '</div>',
+    )
+  );
+  register_sidebar(
+    array(
+      'name'          => ('Footer Sidebar 1'),
+      'id'            => 'footer-sidebar-one',
+      'description'   => "Personnaliser le footer",
+      'before_widget' => '<div class="widget footer-menu">',
+      'after_widget'  => '</div>',
+      'before_title'  => '<h3>',
+      'after_title'   => '</h3>',
+    )
+  );
+  register_sidebar(
+    array(
+      'name'          => ('Footer Sidebar 2'),
+      'id'            => 'footer-sidebar-two',
+      'description'   => "Personnaliser le footer",
+      'before_widget' => '<div class="widget footer-menu">',
+      'after_widget'  => '</div>',
+      'before_title'  => '<h3>',
+      'after_title'   => '</h3>',
+    )
+  );
+  register_sidebar(
+    array(
+      'name'          => ('Footer Sidebar 3'),
+      'id'            => 'footer-sidebar-three',
+      'description'   => "Personnaliser le footer",
+      'before_widget' => '<div class="widget ">',
+      'after_widget'  => '</div>',
+      'before_title'  => '<h3>',
+      'after_title'   => '</h3>',
+    )
+  );
+}

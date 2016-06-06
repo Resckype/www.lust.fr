@@ -1,5 +1,60 @@
+.top-bar {
+  position: relative;
+  text-align: center;
+  .top-bar-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .top-bar-left {
+    min-width: 100%;
+    form.woocommerce-product-search {
+      label {
+        display: none;
+      }
+      input {
+        display: inline-block !important;
+        max-width: 260px;
+      }
+      input[type="search"] {
+        background: transparent;
+        margin: 0;
+        padding: 1rem;
+        height: 45px;
+        vertical-align: middle;
+        font-size: .8rem;
+        color: rgba(255,255,255,0.7);
+        text-align: center;
+        border: none;
+        outline: 0;
+        &:hover {
+          background: rgba(255,255,255,0.15);
+        }
+        &:focus {
+          color: #fff;
+          box-shadow: none;
+        }
+      }
+      input[type="submit"] {
+        background: #000;
+        margin: 0;
+        height: 35px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        vertical-align: middle;
+        font-size: .8rem;
+        color: $gold;
+        text-transform: uppercase;
+        border: 1px solid $gold;
+        outline: 0;
+      }
+    }
+  }
+}
+
 .nav-logo {
   text-align: center;
+  padding: 28px 0;
 }
 
 .menu-burger {
@@ -43,4 +98,8 @@
       transform: translateY(9px);
     }
   }
+}
+
+.container-first {
+  border-top: 1px solid #000;
 }

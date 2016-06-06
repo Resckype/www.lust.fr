@@ -11,35 +11,41 @@
 ?>
 
 		</section>
-		<div class="row reassure">
-			<div class="small-6 large-3 columns">
-				Livraison
-			</div>
-			<div class="small-6 large-3 columns">
-				Offre
-			</div>
-			<div class="small-6 large-3 columns">
-				Confidentiel
-			</div>
-			<div class="small-6 large-3 columns">
-				Paiement sécurisé
-			</div>
-		</div>
+
 		<div id="footer-container">
+			<section class="container reassure-container">
+				<div class="row reassure-row">
+					<div class="small-6 large-3 columns">
+						Livraison
+					</div>
+					<div class="small-6 large-3 columns">
+						Offre
+					</div>
+					<div class="small-6 large-3 columns">
+						Confidentiel
+					</div>
+					<div class="small-6 large-3 columns">
+						Paiement sécurisé
+					</div>
+				</div>
+			</section>
 			<!-- <footer id="footer">
 				<?php do_action( 'foundationpress_before_footer' ); ?>
 				<?php dynamic_sidebar( 'footer-widgets' ); ?>
 				<?php do_action( 'foundationpress_after_footer' ); ?>
 			</footer> -->
 			<footer id="footer">
-				<div class="small-12 large-4 columns">
-					<h3>Informations</h3>
+				<div class="small-12 large-3 columns">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="footer-logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/lust.png" alt="" /></a>
 				</div>
-				<div class="small-12 large-4 columns">
-					<h3>Aide</h3>
+				<div class="small-12 large-3 columns">
+					<?php dynamic_sidebar( 'footer-sidebar-one' ); ?>
 				</div>
-				<div class="small-12 large-4 columns">
-					<h3>Newsletter + Social</h3>
+				<div class="small-12 large-3 columns">
+					<?php dynamic_sidebar( 'footer-sidebar-two' ); ?>
+				</div>
+				<div class="small-12 large-3 columns">
+					<?php dynamic_sidebar( 'footer-sidebar-three' ); ?>
 				</div>
 			</footer>
 		</div>

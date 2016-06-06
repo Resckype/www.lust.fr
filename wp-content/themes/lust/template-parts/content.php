@@ -11,14 +11,24 @@
 ?>
 
 <div class="small-12 large-6 columns article-post" id="post-<?php the_ID(); ?>" <?php post_class('blogpost-entry'); ?>>
-	<header>
+	<!-- <header>
 		<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-	</header>
+	</header> -->
 	<div class="entry-content">
+		<div class="thumb">
+			<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+      <a href="<?php the_permalink(); ?>" class="sweep-to-bottom">
+				<h3><?php the_title(); ?></h3>
+			</a>
+	  </div>
+
 		<!-- <?php the_content( __( 'Lire la suite...', 'foundationpress' ) ); ?> -->
-		 <?php the_excerpt(); ?> 
+		 <?php the_excerpt(); ?>
 	</div>
 	<footer>
-		<?php $tag = get_the_tags(); if ( $tag ) { ?><p><?php the_tags(); ?></p><?php } ?>
+		<div class="wrapper">
+			<a href="<?php the_permalink(); ?>" class="">En savoir plus</a>
+			<span class="sweep-to-right"></span>
+		</div>
 	</footer>
 </div>
