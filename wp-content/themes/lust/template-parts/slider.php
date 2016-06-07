@@ -1,4 +1,4 @@
-<div class="slide cycle-slideshow" data-cycle-fx="carrousel" data-cycle-speed="1000" data-cycle-timeout="4000" data-cycle-slides="> div">
+<div class="slide cycle-slideshow" data-cycle-fx="fade" data-cycle-speed="1000" data-cycle-timeout="4000" data-cycle-slides="> div">
     <?php
 			$args = array(
 			'post_type' => 'product',

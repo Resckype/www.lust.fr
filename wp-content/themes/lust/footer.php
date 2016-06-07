@@ -16,16 +16,20 @@
 			<section class="container reassure-container">
 				<div class="row reassure-row">
 					<div class="small-6 large-3 columns">
-						Livraison
+						<i class="fa fa-clock-o" aria-hidden="true"></i>
+						<span>Livraison 48h</span>
 					</div>
 					<div class="small-6 large-3 columns">
-						Offre
+						<i class="fa fa-truck" aria-hidden="true"></i>
+						<span>Livraison Offerte</span>
 					</div>
 					<div class="small-6 large-3 columns">
-						Confidentiel
+						<i class="fa fa-star-o" aria-hidden="true"></i>
+						<span>Qualité certifiée</span>
 					</div>
 					<div class="small-6 large-3 columns">
-						Paiement sécurisé
+						<i class="fa fa-lock" aria-hidden="true"></i>
+						<span>Paiement sécurisé</span>
 					</div>
 				</div>
 			</section>
@@ -35,16 +39,16 @@
 				<?php do_action( 'foundationpress_after_footer' ); ?>
 			</footer> -->
 			<footer id="footer">
-				<div class="small-12 large-3 columns">
+				<!-- <div class="small-12 large-3 columns">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="footer-logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/lust.png" alt="" /></a>
-				</div>
+				</div> -->
 				<div class="small-12 large-3 columns">
 					<?php dynamic_sidebar( 'footer-sidebar-one' ); ?>
 				</div>
 				<div class="small-12 large-3 columns">
 					<?php dynamic_sidebar( 'footer-sidebar-two' ); ?>
 				</div>
-				<div class="small-12 large-3 columns">
+				<div class="small-12 large-6 columns">
 					<?php dynamic_sidebar( 'footer-sidebar-three' ); ?>
 				</div>
 			</footer>

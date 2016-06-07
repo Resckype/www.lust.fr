@@ -11,9 +11,18 @@
 /* Mobile menu */
 
 .off-canvas {
+  display: block;
+  height: 100%;
+
  > ul.menu {
     height: 100vh;
     padding: 1rem;
+  }
+  #menu-menu-nav-principal {
+    a {
+      padding: 1rem;
+      text-transform: uppercase;
+    }
   }
 }
 

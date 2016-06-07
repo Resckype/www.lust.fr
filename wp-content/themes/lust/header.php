@@ -16,6 +16,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Cinzel:400,700' rel='stylesheet' type='text/css'>
+		<script src="https://use.fontawesome.com/0a0baa64f6.js"></script>
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>

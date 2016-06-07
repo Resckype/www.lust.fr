@@ -16,8 +16,7 @@
  */
 
 get_header(); ?>
-
-<div id="page" role="main">
+<div class="row" role="main">
 	<article class="main-content">
 	<?php if ( have_posts() ) : ?>
 
