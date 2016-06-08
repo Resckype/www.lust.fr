@@ -1,11 +1,21 @@
 .slide-content {
   position: relative;
-  max-height: $slider-height-large;
-  background: white;
+  background: $white;
+  @media screen and (min-width: 1024px){
+    max-height: $slider-height-large;
+  }
 }
 .slide-img {
+  background: $white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
   display: block;
-  margin-left: 30%;
+  text-align: center;
+  // margin-left: 35%;
   img {
     height: $slider-height-large;
     min-width: 0 !important;
@@ -14,12 +24,18 @@
 .slide-txt {
   background: rbga(255,255,255,0.5);
   display: block;
-  min-width: 0 !important;
-  width: 400px;
-  position: absolute !important;
-  top: 0;  bottom: 0;
-  left: 60%;
-  padding: 100px 0 50px 0;
+  @media screen and (min-width: 1024px){
+    min-width: 0 !important;
+    width: 400px;
+    position: absolute !important;
+    top: 0;
+    bottom: 0;
+    left: 60%;
+    padding: 100px 0 50px 0;
+  }
+  @media screen and (max-width: 1023px){
+    padding: 0 0.4rem 2rem 0.4rem;
+  }
   .slide-new, .slide-title, .slide-price {
     min-width: 0 !important;
     width: auto;

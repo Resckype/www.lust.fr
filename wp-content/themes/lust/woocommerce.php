@@ -8,9 +8,21 @@
 
 get_header(); ?>
 
-<div class="row spacing-top">
-	<!-- <?php get_sidebar(); ?> -->
-	<div class="small-12 large-12 columns" role="main">
+</section>
+
+<?php if(is_product_category('Montres')||is_product_category('Montres Femme')||is_product_category('Montres Homme') ){ ?>
+	<section class="container product-sidebar">
+
+		<div class="row">
+			<?php get_sidebar(); ?>
+		</div>
+
+	</section>
+<?php } ?>
+
+<div class="row">
+
+	<div class="small-12 large-12 columns product-listing" role="main">
 
 	<?php do_action( 'foundationpress_before_content' ); ?>
 
