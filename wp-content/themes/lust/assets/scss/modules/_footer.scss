@@ -89,7 +89,7 @@
 			text-transform: uppercase;
 			height: auto;
 			&::placeholder{
-				color: #000;
+				color: $black;
 			}
 		}
 		input[type="email"] {
@@ -99,7 +99,12 @@
 			padding: 1rem 0.5rem;
 			transition: 0.2s;
 			&:focus {
+				transition: 0.2s;
 				color: $gold;
+				border-color: $gold;
+				&::placeholder {
+					color: $gold;
+				}
 			}
 		}
 		input[type="submit"] {

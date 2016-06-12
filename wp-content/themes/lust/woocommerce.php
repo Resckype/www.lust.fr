@@ -10,7 +10,7 @@ get_header(); ?>
 
 </section>
 
-<?php if(is_product_category('Montres')||is_product_category('Montres Femme')||is_product_category('Montres Homme') ){ ?>
+<?php if(is_product_category('Montres')||is_product_category('Montres Femme')||is_product_category('Montres Homme') ||is_product_category('Bracelets')){ ?>
 	<section class="container product-sidebar">
 
 		<div class="row">

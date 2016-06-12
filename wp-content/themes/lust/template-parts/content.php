@@ -27,7 +27,7 @@
 		 	<?php the_excerpt(); ?>
 		</div>
 	</div>
-	<footer>
+	<footer class="sweep-effect">
 		<div class="wrapper">
 			<a href="<?php the_permalink(); ?>" class="">En savoir plus</a>
 			<span class="sweep-to-right"></span>
